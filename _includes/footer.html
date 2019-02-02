@@ -1,0 +1,44 @@
+<footer class="site-footer">
+        <div class="offsite-links">
+            {% if site.twitter_username %}
+            <a href="https://twitter.com/{{ site.twitter_username }}" class="facebook-link">
+                <span class="icon-twitter" aria-hidden="true"></span>
+                <span class="screen-reader-text">Twitter</span>
+            </a>
+            {% endif %}
+            {% if site.facebook_username %}
+            <a href="https://www.facebook.com/{{ site.facebook_username }}" class="facebook-link">
+                <span class="icon-facebook" aria-hidden="true"></span>
+                <span class="screen-reader-text">Facebook</span>
+            </a>
+            {% endif %}
+            {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}" class="github-link">
+                <span class="icon-github" aria-hidden="true"></span>
+                <span class="screen-reader-text">GitHub</span>
+            </a>
+            {% endif %}
+            {% if site.pinterest_username %}
+            <a href="http://www.pinterest.com/{{ site.pinterest_username }}" class="pinterest-link">
+                <span class="icon-pinterest" aria-hidden="true"></span>
+                <span class="screen-reader-text">Pinterest</span>
+            </a>
+            {% endif %}
+            {% if site.instagram_username %}
+            <a href="http://instagram.com/{{ site.instagram_username }}" class="instagram-link">
+                <span class="icon-instagram" aria-hidden="true"></span>
+                <span class="screen-reader-text">Instagram</span>
+            </a>
+            {% endif %}
+            <a href="{{ site.baseurl }}/feed.xml" class="rss-link">
+                <span class="icon-rss"></span>
+                <span class="screen-reader-text">RSS Feed</span>
+            </a>
+        </div><!-- .offsite-links -->
+        <div class="footer-bottom">
+            <div class="site-info">
+                &copy; <a href="{{ site.baseurl }}/">{{site.title}}</a> all rights reserved. <br />Powered by <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>. Scriptor theme by <a target="_blank" href="http://justgoodthemes.com/">JustGoodThemes</a>
+                <a href="#page" id="back-to-top" class="back-to-top"><span class="screen-reader-text">Back to the top </span>&#8593;</a>
+            </div><!-- .site-info -->
+        </div>
+</footer><!-- .site-footer -->

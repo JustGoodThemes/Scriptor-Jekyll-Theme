@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<main class="main-content">
+
+    <article class="post">
+
+        <header class="post-header">
+            <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{page.date | date: "%B %-d, %Y" }}</time>
+            {% if page.banner_image %}
+            <h1 class="post-title">{{page.title}}</h1>
+            <div class="post-meta">
+                by <span class="post-author">{{ site.author_name }}</span> {% if page.tags.size > 0 %}<span class="post-tags">
+                posted in {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}"
+                    rel="tag">{{ tag }}</a>{% unless forloop.last %} {% endunless %}{%
+                endfor %}
+                </span>
+                {% endif %}
+            </div><!-- .post-meta -->
+            <div class="post-thumbnail">
+                <figure class="kg-card kg-image-card kg-width-wide">
+                    <img src="{{ page.banner_image | prepend: site.baseurl }}" class="kg-image" alt="{% if page.banner_image_alt %}{{ page.banner_image_alt }}{% else %}{{ page.title }}{% endif %}">
+                </figure>
+            </div><!-- .post-thumbnail -->
+            {% endif %}
+        </header><!-- .entry-header -->
+        <div class="post-content">
+            {{content}}
+        </div><!-- .post-content -->
+            <div class="share-post">
+                <span>Share</span>
+                <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url }}">Twitter</a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&amp;t={{ page.title | uri_escape }}">Facebook</a>
+            </div><!-- .share-post -->
+            
+            <div class="author-box">
+                <div class="author-avatar" style="background-image: url({{ site.author_image }})"><span class="screen-reader-text">{{
+                        site.author_name }}'s Picture</span></div>
+            
+                <div class="author-details">
+                    <h2 class="author-title">About {{ site.author_name }}</h2>
+                    <p class="author-bio">{{ site.author_bio }}</p>
+                    <span class="author-location">{{ site.author_location}}</span>
+                    <span class="author-website"><a href="{{ site.author_url }}" target="_blank">{{ site.author_url }}</a></span>
+                </div><!-- .author-details -->
+            </div><!-- .author-box -->
+    </article><!-- .post -->
+
+
+    {% if site.disqus %}
+    {% include disqus.html %}
+    {% endif %}
+</main><!-- .main-content -->

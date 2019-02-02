@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">    
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title> 
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+    <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Site Favicon -->
+    <link rel="shortcut icon" href="{{ site.url }}/{{ site.baseurl }}{{ site.favicon }}" type="image/png" />
+
+    <!-- Font Embed Code -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic%7CLato:400,400italic,700,700italic" />
+
+    <!-- CSS Styles -->
+    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="page" class="site inner">
+    <header class="site-header">
+        <h1 class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></h1>
+        <nav class="main-navigation">
+            <h2 class="screen-reader-text">Main navigation</h2>
+            <ul class="menu">
+                {% for link in site.navigation %}
+                {% assign current = nil %}
+                {% if page.url == link.url %}
+                {% assign current = 'nav-current' %}
+                {% endif %}
+                <li class="menu-item {{ current }}">
+                    <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+                </li>
+                {% endfor %}
+            </ul><!-- .menu -->
+        </nav><!-- .site-navigation -->
+    </header>
+
+    {% if page.url == "/" %}
+        <div class="site-description">
+            <p>{{site.description}}</p>
+        </div><!-- .site-description -->
+    {% endif %}
+
+    {{content}}
+
+    {% include footer.html %}
+    </div><!-- .inner -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/custom.js"></script>
+</body>
+</html>
