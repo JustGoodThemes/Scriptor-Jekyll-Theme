@@ -5,17 +5,23 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+# Site language
+lang: en-US
+
 # Site title
 title: "Scriptor"
 
-# A description of your site for social meta tag, search engines, and feed.xml
+# A description of your site for meta tag, search engine results.
 description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
 
-# The subpath of your site, e.g. /blog, for generating urls
-baseurl:
+# The subpath of your site, e.g. /blog, for generating urls.
+baseurl: ""
 
-# The base hostname & protocol of your site for where absolute urls are needed
+# The base hostname & protocol of your site for where absolute urls are needed.
 url: "https://justgoodthemes.com"
+
+# Favicon
+favicon: /images/favicon.png
 
 # Site navigation - each item must have a title and a url.
 navigation:
@@ -23,7 +29,7 @@ navigation:
   url: /
 - text: About
   url: /about/
-- text: Style Guides
+- text: Style Guide
   url: /style-guide/
 - text: Archives
   url: /tags/
@@ -33,24 +39,33 @@ navigation:
 # The shortname for your Disqus site to enable comments.
 disqus: justgoodthemes
 
-# Author information - author info at the bottom of the post
-author_name: "John Doe"
-author_bio: "John is a designer, photographer, speaker, author of a couple of books about typography and the founder of photo magazine Curious."
-author_url:  "http://justgoodthemes.com"
-author_location: "Vilnius, Lithuania"
-author_image: /assets/images/authorimage.png
+# Colors
+palette: blue
+palettes:
+  blue:
+    sass:
+      accent: '#2d72d9'
+  green:
+    sass:
+      accent: '#00debc'
+  orange:
+    sass:
+      accent: '#ff5000'
 
-# Social links in the site footer
-twitter_username: "username"
-facebook_username: "username"
-github_username: "username"
-pinterest_username: "username"
-instagram_username: "username"
+# Site footer
+footer:
+  content: "&copy; Scriptor all rights reserved."
+  links:
+    - text: Theme by JustGoodThemes
+      url: 'https://www.justgoodthemes.com'
+      new_window: true
+  has_social: true
 
 # http://jekyllrb.com/docs/pagination/
-paginate: 5
+paginate: 3
 paginate_path: '/page:num/'
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
 
 # Permalinks
 permalink: /:title
@@ -59,5 +74,6 @@ markdown: kramdown
 
 # Sass
 sass:
-  sass_dir: _sass
-  style: compressed
+  indentWidth: 4
+  style: nested
+  precision: 10

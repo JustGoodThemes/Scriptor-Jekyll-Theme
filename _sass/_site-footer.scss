@@ -1,0 +1,55 @@
+/* ==========================================================================
+   8. Site Footer
+   ========================================================================== */
+
+.site-footer {
+  padding: 1.66667em 0;
+}
+
+.offsite-links {
+  margin-bottom: 1.11111em;
+  a {
+    color: _palette(primary);
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+    &:hover{
+      color: _palette(accent);
+    }
+  }
+}
+
+.site-info {
+  font-size: 14px;
+}
+
+.back-to-top {
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 1.25rem;
+  padding: 1px 0 3px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .footer-bottom {
+    padding-right: 60px;
+    position: relative;
+  }
+
+  .back-to-top {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}

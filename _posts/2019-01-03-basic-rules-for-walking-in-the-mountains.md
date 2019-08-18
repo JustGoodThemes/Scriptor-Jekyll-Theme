@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Basic Rules For Walking In The Mountains"
-date:   2019-01-03
-banner_image: /assets/images/posts/2019/Mountain.jpg
-tags: [travel, photography]
+title: "Basic Rules For Walking In The Mountains"
+description: "Hiking refers to walking outdoors on a trail, or off trail, for recreational purposes."
+date: 2019-01-03
+feature_image: images/mountain.jpg
+tags: [tips, work]
 ---
 
 In the *United States, Canada, the Republic of Ireland, and United Kingdom,* **hiking** refers to walking outdoors on a trail, or off trail, for recreational purposes. A day hike refers to a hike that can be completed in a single day. However, in the United Kingdom, the word walking is also used, as well as rambling, while walking in mountainous areas is called hillwalking. In Northern England, Including the Lake District and Yorkshire Dales, fellwalking describes hill or mountain walks, as fell is the common word for both features there.
@@ -16,7 +17,7 @@ Hiking can sometimes involves bushwhacking and hiking is sometimes referred to a
 
 Frequently nowadays long distance hikes (walking tours) are undertaken along long distance paths, including the National Trails in England and Wales, the National Trail System in the USA and The Grande Randonnée (France), Grote Routepaden, or Lange-afstand-wandelpaden (Holland), Grande Rota (Portugal), Gran Recorrido (Spain) is a network of long-distance footpaths in Europe, mostly in France, Belgium, the Netherlands and Spain. There are extensive networks in other European countries of long distance trails, as well as in Canada, Australia, New Zealand, Nepal, and to a lesser extent other Asiatic countries, like Turkey, Israel, and Jordan. In the Alps of Austria, Slovenia, Switzerland, Germany, France, and Italy walking tours are often made from 'hut-to-hut', using an extensive system of mountain huts.
 
-{% include image_full.html imageurl="/assets/images/posts/2019/Mountain2.jpg" title="Mountain" caption="Norway is Beautiful" %}
+{% include image_full.html imageurl="/images/mountain-2.jpg" title="Mountain" caption="Norway is Beautiful" %}
 
 In the late 20th-century there has been a proliferation of official and unofficial long distance routes, which mean that hikers now are more likely to refer to using a long distance way (Britain), trail (USA), The Grande Randonnée (France), etc., than setting out on a walking tour. Early examples of long distance paths, include the Appalachian Trail in the USA and the Pennine Way in Britain. Pilgrimage routes are now treated, by some walkers, as long distance routes, and the route taken by the British National Trail the North Downs Way closely follows that of the Pilgrims' Way to Canterbury.
 

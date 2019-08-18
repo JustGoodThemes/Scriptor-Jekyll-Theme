@@ -2,31 +2,20 @@
  * Main JS file for Scriptor behaviours
  */
 
-/*globals jQuery, document */
-(function ($) {
-	"use strict";
+// Responsive video embeds
+let videoEmbeds = [
+  'iframe[src*="youtube.com"]',
+  'iframe[src*="vimeo.com"]'
+];
+reframe(videoEmbeds.join(','));
 
-	$(document).ready(function(){
-
-		// Responsive video embeds
-		$('.post-content').fitVids();
-
-		// Gallery adjustments
-		$( '.kg-gallery-image > img' ).each( function() {
-			var _this = $(this),
-				$container = _this.closest('.kg-gallery-image'),
-				width = _this.attr('width'),
-				height = _this.attr('height'),
-				ratio = width / height;
-			$container.css({'flex' : ratio + ' 1 0%' });
-		});
-
-		// Scroll to top
-		$('#back-to-top').on('click', function(e) {
-			$('html, body').animate({'scrollTop': 0});
-			e.preventDefault();
-		});
-
-	});
-
-}(jQuery));
+// Menu on small screens
+let menuToggle = document.querySelectorAll('.menu-toggle');
+if (menuToggle) {
+  for (let i = 0; i < menuToggle.length; i++) {
+    menuToggle[i].addEventListener('click', function (e) {
+      document.body.classList.toggle('menu--opened');
+      e.preventDefault();
+    }, false);
+  }
+}

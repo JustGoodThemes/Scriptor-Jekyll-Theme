@@ -1,0 +1,32 @@
+<header class="site-header">
+  {% if page.url == "/" %}
+  <h1 class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></h1>
+  {% else %}
+  <p class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></p>
+  {% endif %}
+  <nav class="site-navigation">
+    <div class="site-navigation-wrap">
+      <h2 class="screen-reader-text">Main navigation</h2>
+      <ul class="menu">
+        {% for item in site.navigation %}
+        {% assign current = nil %}
+        {% if page.url == item.url %}
+        {% assign current = 'nav-current' %}
+        {% endif %}
+        <li class="menu-item {{ current }}">
+          <a class="{{ current }}" href="{{ item.url }}">{{ item.text }}</a>
+        </li>
+        {% endfor %}
+      </ul><!-- .menu -->
+      <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span
+          class="icon-close" aria-hidden="true"></span></button>
+    </div><!-- .site-navigation-wrap -->
+  </nav><!-- .site-navigation -->
+  <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+</header>
+
+{% if page.url == "/" %}
+<div class="site-description fadeInDown delay_05s">
+  <p>{{site.description}}</p>
+</div><!-- .site-description -->
+{% endif %}

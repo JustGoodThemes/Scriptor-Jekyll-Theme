@@ -1,0 +1,6 @@
+{% for link in site.data.social.links %}
+<a href="{{ link.url }}" target="_blank" rel="noopener">
+  <span class="{{ link.icon }}" aria-hidden="true"></span>
+  <span class="screen-reader-text">{{ link.title }}</span>
+</a>
+{% endfor %}

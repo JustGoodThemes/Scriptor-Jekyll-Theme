@@ -1,0 +1,78 @@
+/* ==========================================================================
+   9. Animations
+   ========================================================================== */
+
+@-webkit-keyframes fadeInOpacity {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: .15;
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: .15;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.delay_05s {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.delay_075s {
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+.delay_1s {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+  }
+
+  to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+  }
+
+  to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}

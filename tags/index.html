@@ -3,33 +3,28 @@ layout: default
 title: Post Archives
 ---
 
-<main class="site-main">
-    <article class="post">
-        <header class="entry-header">
-            <div class="entry-header-wrap">
-                <h1 class="entry-title">{{page.title}}</h1>
-            </div>
-        </header><!-- .entry-header -->
-        <div class="entry-content">
-            <div class="post-meta">
-                {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{%
-                endunless %}{% endfor %}{% endcapture %}
-                {% assign sortedTags = site_tags | split:',' | sort %}
-                {% for tag in sortedTags %}
-                <span class="post-tags"><a href="#{{ tag | cgi_escape }}">{{ tag }} </a></span>
-                {% endfor %}
-            </div>
-            {% for tag in sortedTags %}
-            <h2 id="{{ tag | cgi_escape }}">{{ tag }}</h2>
-            <ul class="archive-posts-list">
-                {% for post in site.tags[tag] %}
-                <li><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="Permanent Link to {{ site.baseurl }}{{ post.url }}">{{
-                        post.title }}</a> <span class="archive-meta"> — <time class="post-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{
-                            post.date | date: "%B %-d, %Y" }}</time></span></li>
-                {% endfor %}
-            </ul>
-            <p><a href="#top" class="archive-top-link" title="Back to Top">Return to top &#8593;</a></p>
-            {% endfor %}
-        </div><!-- .entry-content -->
-    </article><!-- .post -->
+<main class="site-main fadeInDown delay_075s">
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">{{page.title}}</h1>
+    </header><!-- .post-header -->
+    <div class="post-content">
+      <div class="archive-tags">
+        {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+        {% assign sortedTags = site_tags | split:',' | sort %}
+        {% for tag in sortedTags %}
+        <a href="#{{ tag | cgi_escape }}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+        {% endfor %}
+      </div><!-- .archive-tag-list -->
+      {% for tag in sortedTags %}
+        <h2 id="{{ tag | cgi_escape }}">{{ tag }}</h2>
+        <ul class="archive-post-list">
+        {% for post in site.tags[tag] %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="archive-meta"> — <time class="archive-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time></span></li>
+        {% endfor %}
+        </ul><!-- .archive-post-list -->
+        <p><a href="#top" class="archive-top-link">Return to top &#8593;</a></p>
+      {% endfor %}
+    </div><!-- .post-content -->
+  </article><!-- .post -->
 </main><!-- .site-main -->

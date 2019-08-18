@@ -1,0 +1,55 @@
+/* ==========================================================================
+   7. Posts Navigation
+   ========================================================================== */
+
+.pagination {
+  border-bottom: 1px solid _palette(border);
+  color: _palette(primary);
+  font-weight: bold;
+  padding: 2.22222em 0 3.33333em;
+  text-align: center;
+}
+
+.nav-links {
+  position: relative;
+}
+
+.page-number {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.older-posts,
+.newer-posts {
+  display: inline-block;
+  font-size: 0.88889em;
+  line-height: 1.875;
+}
+
+.older-posts {
+  margin-top: 0.5rem;
+}
+
+.newer-posts {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 481px) {
+  .older-posts,
+  .newer-posts {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .older-posts {
+    right: 0;
+  }
+
+  .newer-posts {
+    left: 0;
+  }
+}
