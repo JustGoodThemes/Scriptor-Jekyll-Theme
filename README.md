@@ -13,6 +13,7 @@ Scriptor is a simple, minimal, clean & responsive Jekyll theme for writers.
 + Disqus Comments
 + Accent color options
 + [Prism](https://prismjs.com/) syntax highlighter
++ Stackbit [Uniform support](https://docs.stackbit.com/uniform/)
 
 ## Deployment
 
