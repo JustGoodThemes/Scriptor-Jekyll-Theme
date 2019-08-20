@@ -1,0 +1,254 @@
+stackbitVersion: "~0.2.0"
+ssgName: jekyll
+staticDir: ""
+uploadDir: images
+buildCommand: "gem install jekyll bundler && bundle install && bundle exec jekyll build"
+publishDir: "_site"
+dataDir: "_data"
+pagesDir: ""
+pageTemplateKey: layout
+models:
+  config:
+    type: config
+    label: Config
+    fields:
+      - name: lang
+        type: string
+        label: Site Language
+        description: The language of the site used in HTML lang attribute.
+      - name: title
+        type: string
+        label: Site Title
+        description: The title displayed in the site header, title tag, search-engine results.
+      - name: description
+        type: string
+        label: Description
+        description: The default description displayed in meta tags, search-engine results.
+      - name: baseurl
+        type: string
+        label: Baseurl
+        description: The subpath of your site, e.g. /blog, for generating urls.
+      - name: url
+        type: string
+        label: Url
+        description: The base hostname and protocol of your site for where absolute urls are needed.
+      - name: favicon
+        type: image
+        label: Favicon
+      - type: list
+        name: navigation
+        label: Header Navigation
+        items:
+          type: object
+          labelField: text
+          fields:
+            - type: string
+              name: text
+              label: Title
+              required: true
+            - type: string
+              name: url
+              label: URL
+      - type: string
+        name: disqus
+        label: Disqus Username
+        description: The shortname for your Disqus site to enable comments.
+      - type: object
+        name: footer
+        label: Footer Configuration
+        fields:
+          - type: string
+            name: content
+            label: Footer Content
+            description: The copyright text displayed in the footer.
+          - type: list
+            name: links
+            label: Links
+            description: A list of links displayed in the footer.
+            items:
+              type: object
+              labelField: text
+              fields:
+                - type: string
+                  name: text
+                  label: Link text
+                - type: string
+                  name: url
+                  label: URL
+                  widget: url
+                - type: boolean
+                  name: new_window
+                  label: Open in new window
+                  default: true
+          - type: boolean
+            name: has_social
+            label: Enable social links?
+            default: true
+      - type: enum
+        name: palette
+        label: Palette
+        description: The palette of the theme.
+        options:
+          - blue
+          - green
+          - orange
+        default: blue
+      - type: object
+        name: palettes
+        label: Palettes
+        hidden: true
+        fields:
+          - type: palette
+            name: blue
+            label: Blue
+          - type: palette
+            name: green
+            label: Green
+          - type: palette
+            name: orange
+            label: Orange
+  author:
+    type: data
+    file: author.json
+    label: Author
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: markdown
+        name: bio
+        label: Bio
+      - type: string
+        name: url
+        label: URL
+      - type: string
+        name: location
+        label: Location
+      - type: image
+        name: image
+        label: Avatar
+  social:
+    type: data
+    file: social.json
+    label: Social Links
+    fields:
+      - type: list
+        name: links
+        label: Link
+        description: A list of social links displayed in the footer.
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: type
+              label: Type
+              hidden: true
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: icon
+              label: Icon
+              description: Font Awesome icon class name.
+              required: true
+            - type: string
+              name: url
+              label: URL
+              widget: url
+  post:
+    type: page
+    label: Post
+    template: post
+    folder: _posts
+    fields:
+      - name: title
+        type: string
+        label: Title
+        description: The title of the post
+        required: true
+      - name: description
+        type: string
+        label: Description
+        description: The description used in meta tags.
+      - name: date
+        type: date
+        label: Date
+        required: true
+      - name: feature_image
+        type: image
+        label: Feature image
+        description: The featured image of the post.
+      - name: tags
+        type: list
+        label: Tags
+        items:
+          type: string
+  page:
+    type: page
+    label: Page
+    template: page
+    exclude: index.md
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: string
+        name: description
+        label: Description
+        description: The description used in meta tags.
+      - name: feature_image
+        type: image
+        label: Feature image
+        description: The featured image of the page.
+  tags:
+    type: page
+    label: Tags Page
+    template: tags
+    file: tags.md
+    hideContent: true
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: string
+        name: description
+        label: Description
+        description: The description used in meta tags.
+  notfound:
+    type: page
+    label: 404 Page
+    singleInstance: true
+    file: 404.md
+    template: page
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: string
+        name: description
+        label: Description
+        description: The description used in meta tags.
+      - name: feature_image
+        type: image
+        label: Feature image
+        description: The featured image of the page.
+      - type: string
+        name: permalink
+        label: Permalink
+        description: The permalink of the page.
+  palette:
+    type: object
+    label: Palette
+    fields:
+      - type: object
+        name: sass
+        label: SASS
+        fields:
+          - type: color
+            name: accent
+            label: Accent

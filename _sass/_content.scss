@@ -82,19 +82,20 @@
 
   .author-bio {
     line-height: 1.5;
-    margin-bottom: 1.11111em;
-  }
 
-  .author-meta {
-    margin-bottom: 1em;
+    p {
+      margin-bottom: 1em;
+    }
   }
 
   .author-location,
   .author-website {
     color: _palette(meta);
+    display: inline-block;
     font-family: _font(secondary);
     font-size: 0.88889rem;
     font-style: italic;
+    margin-bottom: 1rem;
     margin-right: 5px;
   }
 

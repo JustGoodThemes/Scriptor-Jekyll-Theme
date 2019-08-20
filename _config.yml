@@ -18,7 +18,7 @@ description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for
 baseurl: ""
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "https://scriptor-jekyll.netlify.com"
+url: "https://justgoodthemes.com"
 
 # Favicon
 favicon: /images/favicon.png
@@ -31,7 +31,7 @@ navigation:
   url: /about/
 - text: Style Guide
   url: /style-guide/
-- text: Archives
+- text: Tags
   url: /tags/
 - text: Download
   url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme

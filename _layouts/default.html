@@ -8,7 +8,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }} Feed"
     href="{{ '/feed.xml' | absolute_url }}">
-  {% if site.favicon %}
+  {% if site.favicon and site.favicon != "" %}
   <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/png" />
   {% endif %}
   <!-- Styles -->

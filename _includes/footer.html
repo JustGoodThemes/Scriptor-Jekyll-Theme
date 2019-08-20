@@ -1,7 +1,6 @@
 <footer class="site-footer">
   <div class="offsite-links">
-    {% assign has_social_is_not_empty = site.footer.has_social | is_not_empty %}
-    {% if has_social_is_not_empty %}
+    {% if site.footer.has_social %}
       {% include social.html %}
     {% endif %}
   </div><!-- .offsite-links -->

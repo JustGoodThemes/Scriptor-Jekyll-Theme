@@ -9,9 +9,9 @@ layout: default
       <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{page.date | date: "%B %-d, %Y" }}</time>
       <h1 class="post-title">{{page.title}}</h1>
       <div class="post-meta">
-        By <span class="post-author">{{ site.data.author.name }}</span>{% if page.tags.size > 0 %}<span class="post-tags"> in {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_escape }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
+        By <span class="post-author">{{ site.data.author.name }}</span>{% if page.tags.size > 0 %}<span class="post-tags"> in {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag | cgi_escape }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
       </div><!-- .post-meta -->
-      {% if page.feature_image %}
+      {% if page.feature_image and page.feature_image != "" %}
       <figure class="post-thumbnail image-card width-wide">
         <img src="{{ page.feature_image | relative_url }}" alt="{{ page.title }}">
       </figure><!-- .post-thumbnail -->
@@ -28,27 +28,23 @@ layout: default
         href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}&amp;t={{ page.title | uri_escape }}" rel="noopener">Facebook</a>
     </div><!-- .share-post -->
     <div class="author-box">
-      {% if site.data.author.image %}
+      {% if site.data.author.image and site.data.author.image != "" %}
       <div class="author-avatar" style="background-image: url('{{ site.data.author.image }}')"><span class="screen-reader-text">{{ site.data.author.name }}'s Picture</span></div>
       {% endif %}
       <div class="author-details">
         <h2 class="author-title">About {{ site.data.author.name }}</h2>
         <div class="author-bio">{{ site.data.author.bio | markdownify }}</div>
-        {% if site.data.author.location or site.data.author.url %}
-        <div class="author-meta">
-          {% if site.data.author.location %}
-          <span class="author-location">{{ site.data.author.location}}</span>
-          {% endif %}
-          {% if site.data.author.url %}
-          <span class="author-website"><a href="{{ site.data.author.url }}" target="_blank" rel="noopener">{{ site.data.author.url }}</a></span>
-          {% endif %}
-        </div>
+        {% if site.data.author.location and site.data.author.location != "" %}
+        <span class="author-location">{{ site.data.author.location}}</span>
+        {% endif %}
+        {% if site.data.author.url and site.data.author.url != "" %}
+        <span class="author-website"><a href="{{ site.data.author.url }}" target="_blank" rel="noopener">{{ site.data.author.url }}</a></span>
         {% endif %}
       </div><!-- .author-details -->
     </div><!-- .author-box -->
   </article><!-- .post -->
 
-  {% if site.disqus %}
+  {% if site.disqus and site.disqus != "" %}
     {% include disqus.html %}
   {% endif %}
 
