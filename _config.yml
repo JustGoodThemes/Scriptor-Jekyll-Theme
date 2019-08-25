@@ -40,17 +40,7 @@ navigation:
 disqus: justgoodthemes
 
 # Colors
-palette: blue
-palettes:
-  blue:
-    sass:
-      accent: '#2d72d9'
-  green:
-    sass:
-      accent: '#00debc'
-  orange:
-    sass:
-      accent: '#ff5000'
+accent_color: '#2d72d9'
 
 # Site footer
 footer:

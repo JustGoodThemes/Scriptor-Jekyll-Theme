@@ -30,9 +30,9 @@ $font: (
 );
 
 // Palette.
-{% assign palette = site.palettes[site.palette].sass %}
+{% assign accent = site.accent_color | default: '#2d72d9' %}
 $palette: (
-  accent:    {{ palette.accent }},
+  accent:    {{ accent }},
   primary:   #6b747a,
   secondary: #2c343c,
   meta:      #9ba6ad,

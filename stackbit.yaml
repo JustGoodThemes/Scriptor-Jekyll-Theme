@@ -84,29 +84,10 @@ models:
             name: has_social
             label: Enable social links?
             default: true
-      - type: enum
-        name: palette
-        label: Palette
-        description: The palette of the theme.
-        options:
-          - blue
-          - green
-          - orange
-        default: blue
-      - type: object
-        name: palettes
-        label: Palettes
-        hidden: true
-        fields:
-          - type: palette
-            name: blue
-            label: Blue
-          - type: palette
-            name: green
-            label: Green
-          - type: palette
-            name: orange
-            label: Orange
+      - type: color
+        name: accent_color
+        label: Accent Color
+        description: The accent color of the theme.
   author:
     type: data
     file: author.json
@@ -241,14 +222,3 @@ models:
         name: permalink
         label: Permalink
         description: The permalink of the page.
-  palette:
-    type: object
-    label: Palette
-    fields:
-      - type: object
-        name: sass
-        label: SASS
-        fields:
-          - type: color
-            name: accent
-            label: Accent
