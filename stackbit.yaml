@@ -12,29 +12,43 @@ models:
     type: config
     label: Config
     fields:
-      - name: lang
-        type: string
+      - type: color
+        name: accent_color
+        label: Accent Color
+        description: The accent color of the theme.
+        required: true
+      - type: string
+        name: lang
         label: Site Language
         description: The language of the site used in HTML lang attribute.
-      - name: title
-        type: string
+      - type: string
+        name: title
         label: Site Title
         description: The title displayed in the site header, title tag, search-engine results.
-      - name: description
-        type: string
+      - type: string
+        name: description
         label: Description
         description: The default description displayed in meta tags, search-engine results.
-      - name: baseurl
-        type: string
+      - type: string
+        name: baseurl
         label: Baseurl
         description: The subpath of your site, e.g. /blog, for generating urls.
-      - name: url
-        type: string
+      - type: string
+        name: url
         label: Url
         description: The base hostname and protocol of your site for where absolute urls are needed.
-      - name: favicon
-        type: image
+      - type: string
+        name: permalink
+        label: Permalink
+        description: The permalink pattern.
+      - type: image
+        name: favicon
         label: Favicon
+        description: The icon image associated with your website.
+      - type: string
+        name: disqus
+        label: Disqus Username
+        description: The shortname for your Disqus site to enable comments.
       - type: list
         name: navigation
         label: Header Navigation
@@ -48,46 +62,47 @@ models:
               required: true
             - type: string
               name: url
-              label: URL
-      - type: string
-        name: disqus
-        label: Disqus Username
-        description: The shortname for your Disqus site to enable comments.
+              label: URL      
       - type: object
         name: footer
         label: Footer Configuration
         fields:
-          - type: string
+          - type: markdown
             name: content
             label: Footer Content
             description: The copyright text displayed in the footer.
-          - type: list
-            name: links
-            label: Links
-            description: A list of links displayed in the footer.
-            items:
-              type: object
-              labelField: text
-              fields:
-                - type: string
-                  name: text
-                  label: Link text
-                - type: string
-                  name: url
-                  label: URL
-                  widget: url
-                - type: boolean
-                  name: new_window
-                  label: Open in new window
-                  default: true
           - type: boolean
             name: has_social
             label: Enable social links?
             default: true
-      - type: color
-        name: accent_color
-        label: Accent Color
-        description: The accent color of the theme.
+      - type: list
+        name: plugins
+        label: Plugins
+        items:
+          type: string
+      - type: number
+        name: paginate
+        label: Paginate
+        description: Number of posts per page.
+      - type: string
+        name: paginate_path
+        label: Pagination Path
+        description: The destination of the pagination pages.
+      - type: string
+        name: markdown
+        label: Markdown
+        hidden: true
+      - type: object
+        name: sass
+        label: Sass Configuration
+        hidden: true
+        fields:
+          - type: string
+            name: sass_dir
+            label: Sass Files Directory
+          - type: string
+            name: style
+            label: Style
   author:
     type: data
     file: author.json
@@ -96,18 +111,23 @@ models:
       - type: string
         name: name
         label: Name
+        description: The name of the author.
       - type: markdown
         name: bio
         label: Bio
+        description: The short bio of the author.
       - type: string
         name: url
         label: URL
+        description: The URL of the author.
       - type: string
         name: location
         label: Location
+        description: The location of the author.
       - type: image
         name: image
         label: Avatar
+        description: The profile image of the author.
   social:
     type: data
     file: social.json
@@ -122,12 +142,9 @@ models:
           labelField: title
           fields:
             - type: string
-              name: type
-              label: Type
-              hidden: true
-            - type: string
               name: title
               label: Title
+              description: The title of the icon.
             - type: string
               name: icon
               label: Icon
@@ -136,6 +153,7 @@ models:
             - type: string
               name: url
               label: URL
+              description: The URL to your social profile.
               widget: url
   post:
     type: page
@@ -146,7 +164,7 @@ models:
       - name: title
         type: string
         label: Title
-        description: The title of the post
+        description: The title of the post.
         required: true
       - name: description
         type: string
@@ -155,6 +173,7 @@ models:
       - name: date
         type: date
         label: Date
+        description: The publish date of the post.
         required: true
       - name: feature_image
         type: image
@@ -169,11 +188,11 @@ models:
     type: page
     label: Page
     template: page
-    exclude: index.md
     fields:
       - type: string
         name: title
         label: Title
+        description: The title of the page.
         required: true
       - type: string
         name: description
@@ -194,6 +213,7 @@ models:
       - type: string
         name: title
         label: Title
+        description: The title of the tags page.
         required: true
       - type: string
         name: description
@@ -209,6 +229,7 @@ models:
       - type: string
         name: title
         label: Title
+        description: The title of the page.
         required: true
       - type: string
         name: description

@@ -1,25 +1,21 @@
 {
   "links": [
     {
-      "type": "twitter",
       "title": "Twitter",
       "icon": "fa-twitter",
       "url": "https://twitter.com/"
     },
     {
-      "type": "github",
       "title": "GitHub",
       "icon": "fa-github",
       "url": "https://github.com/"
     },
     {
-      "type": "instagram",
       "title": "Instagram",
       "icon": "fa-instagram",
       "url": "https://www.instagram.com/"
     },
     {
-      "type": "linkedin",
       "title": "LinkedIn",
       "icon": "fa-linkedin",
       "url": "https://www.linkedin.com/"

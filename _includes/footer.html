@@ -6,11 +6,7 @@
   </div><!-- .offsite-links -->
   <div class="footer-bottom">
     <div class="site-info">
-      {{ site.footer.content }}
-      &nbsp;
-      {% for link in site.footer.links %}
-      <a href="{{ link.url }}" {% assign new_window_is_not_empty = link.new_window | is_not_empty %}{% if new_window_is_not_empty %}target="_blank" rel="noopener" {% endif %}>{{ link.text }}</a>.
-      {% endfor %}
+      {{ site.footer.content | markdownify }}
     </div><!-- .site-info -->
     <a href="#page" id="back-to-top" class="back-to-top"><span class="screen-reader-text">Back to the top </span>&#8593;</a>
   </div><!-- .footer-bottom -->
