@@ -2,7 +2,7 @@ stackbitVersion: "~0.2.0"
 ssgName: jekyll
 staticDir: ""
 uploadDir: images
-buildCommand: "gem install jekyll bundler && bundle install && bundle exec jekyll build"
+buildCommand: "bundle install && jekyll build" 
 publishDir: "_site"
 dataDir: "_data"
 pagesDir: ""
@@ -188,6 +188,7 @@ models:
     type: page
     label: Page
     template: page
+    exclude: "_posts/**"
     fields:
       - type: string
         name: title

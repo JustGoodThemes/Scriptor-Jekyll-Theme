@@ -21,7 +21,7 @@ baseurl: ""
 url: "https://scriptor-jekyll.netlify.com"
 
 # Favicon
-favicon: /images/favicon.png
+favicon: images/favicon.png
 
 # Site navigation - each item must have a title and a url.
 navigation:
