@@ -46,6 +46,10 @@ models:
         label: Favicon
         description: The icon image associated with your website.
       - type: string
+        name: google_analytics
+        label: Google analytics
+        description: Google Analytics id.
+      - type: string
         name: disqus
         label: Disqus Username
         description: The shortname for your Disqus site to enable comments.
