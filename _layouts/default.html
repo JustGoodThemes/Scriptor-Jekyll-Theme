@@ -26,6 +26,9 @@
   </div><!-- .site -->
 
   <!-- Scripts -->
+  {% if site.google_analytics %}
+    {% include google_analytics.html %}
+  {% endif %}
   <script src="{{ '/assets/js/plugins.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
 
