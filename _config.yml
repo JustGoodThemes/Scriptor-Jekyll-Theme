@@ -9,10 +9,19 @@
 lang: en-US
 
 # Site title
-title: "Scriptor"
+title: "Journeys"
 
 # A description of your site for meta tag, search engine results.
-description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
+# Maybe look into a quote? 
+#   Haemin Sumin: Everything in this universe is evanescent
+#   Haemin Sumin: Choose happiness, not success, as your life’s goal. If you become successful but aren’t happy, then what is the point?
+#   Haemin Sumin: Any conversation can become interesting and lively as soon as we start speaking with real honesty.
+#   Why I want to live alone: Haemin sumin Whether we like it or not, we naturally become influenced by our surroundings
+
+description: "Unfiltered thoughts about experiences in our muddled lives"
+
+#   Hamein Sumin: Do you want to be happy, or do you want to appear happy? Never mind what the world tells you to do to be happy. Be truthful to yourself and discover what you really want
+
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
@@ -32,22 +41,22 @@ navigation:
     url: /
   - text: About
     url: /about/
-  - text: Style Guide
-    url: /style-guide/
+  # - text: Style Guide
+  #   url: /style-guide/
   - text: Tags
     url: /tags/
-  - text: Download
-    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+  # - text: Download
+  #   url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
 
 # The shortname for your Disqus site to enable comments.
-disqus: justgoodthemes
+# disqus: justgoodthemes
 
 # Colors
-accent_color: '#2d72d9'
+accent_color: '#373d47'  # '#2d72d9'
 
 # Site footer
 footer:
-  content: "&copy; Scriptor all rights reserved. Theme by [JustGoodThemes](https://www.justgoodthemes.com)."
+  content: "&copy; Journeys all rights reserved. Theme by [JustGoodThemes](https://www.justgoodthemes.com)."
   has_social: true
 
 # Plugins

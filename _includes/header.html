@@ -27,6 +27,12 @@
 
 {% if site.description and site.description != "" and page.url == "/" %}
 <div class="site-description fadeInDown delay_05s">
-  <p>{{ site.description }}</p>
+  <blockquote>
+    <small>  “Do you want to be happy, or do you want to appear happy? Never mind what the world tells you to do to be happy. Be truthful to yourself and discover what you really want.”
+      <cite>― Haemin Sunim</cite></small>
+    <!-- <i>The Things You Can See Only When You Slow Down</i> -->
+  </blockquote>  
+  <p><b>{{ site.description }}</b></p>
+  <!-- TODO: figure out to incorporate markdown in site description -->
 </div><!-- .site-description -->
 {% endif %}

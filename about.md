@@ -5,6 +5,10 @@ description: An optional about page for Scriptor Jekyll theme
 feature_image: images/about.jpg
 ---
 
+<!-- # Quote about
+# Haemin Sumin: How boring would the world be if everyone thought exactly the same way? When you grant people freedom, you will find yours, too  -->
+
+
 **John Doe** is a Senior Art Director from [Vilnius](https://en.wikipedia.org/wiki/Vilnius), Lithuania. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
 
 His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2015.
