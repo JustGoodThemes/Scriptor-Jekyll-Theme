@@ -1,24 +1,9 @@
 {
   "links": [
     {
-      "title": "Twitter",
-      "icon": "fa-twitter",
-      "url": "https://twitter.com/"
-    },
-    {
       "title": "GitHub",
       "icon": "fa-github",
-      "url": "https://github.com/"
-    },
-    {
-      "title": "Instagram",
-      "icon": "fa-instagram",
-      "url": "https://www.instagram.com/"
-    },
-    {
-      "title": "LinkedIn",
-      "icon": "fa-linkedin",
-      "url": "https://www.linkedin.com/"
+      "url": "https://github.com/hotdogblog"
     }
   ]
 }

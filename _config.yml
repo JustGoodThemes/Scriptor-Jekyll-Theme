@@ -9,10 +9,11 @@
 lang: en-US
 
 # Site title
-title: "Scriptor"
+title: "Crisp Hotdog Blog Log"
 
 # A description of your site for meta tag, search engine results.
-description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
+description: "I'm combing two of my favorite conversation topics; hotdogs and _I Think You Should Leave_ quotes.
+I'll be eating hotdogs and then rate them by quotes from _I Think You Should Leave_. Will the quotes match what I feel about the hotdog I ate, \"not really\" - _I Think You Should Leave_ Season 1 Episode 2."
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
@@ -32,22 +33,16 @@ navigation:
     url: /
   - text: About
     url: /about/
-  - text: Style Guide
-    url: /style-guide/
-  - text: Tags
-    url: /tags/
-  - text: Download
-    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
 
 # The shortname for your Disqus site to enable comments.
-disqus: justgoodthemes
+# disqus: justgoodthemes
 
 # Colors
 accent_color: '#2d72d9'
 
 # Site footer
 footer:
-  content: "&copy; Scriptor all rights reserved. Theme by [JustGoodThemes](https://www.justgoodthemes.com)."
+  content: "&copy; Scriptor all rights reserved."
   has_social: true
 
 # Plugins
