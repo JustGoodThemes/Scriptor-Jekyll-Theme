@@ -9,12 +9,12 @@
 
 ## Features
 
-+ Responsive design
-+ Archive organized by [tags](https://scriptor-jekyll.netlify.com/tags/)
-+ Disqus Comments
-+ Accent color options
-+ [Prism](https://prismjs.com/) syntax highlighter
-+ Stackbit [Uniform support](https://docs.stackbit.com/uniform/)
+- Responsive design
+- Archive organized by [tags](https://scriptor-jekyll.netlify.com/tags/)
+- Disqus Comments
+- Accent color options
+- [Prism](https://prismjs.com/) syntax highlighter
+- Stackbit [Uniform support](https://docs.stackbit.com/uniform/)
 
 ## Local Installation
 
@@ -32,11 +32,11 @@ Then run `bundle exec jekyll serve` to start the Jekyll server.
 
 ## Deployment
 
-### Stackbit Deploy
+### Local Instalation
 
-This theme contains a `stackbit.yaml` file and can be used with [Stackbit](https://www.stackbit.com/) to instantly deploy to Netlify with optional headless CMS (Contentful, DatoCMS, Forestry, NetlifyCMS, etc.). 
+To set up Jekyll on local machine please follow the official documentation that can be found here -> https://jekyllrb.com/docs/.
 
-[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme)
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `bundle exec jekyll serve` to start the Jekyll server.
 
 ### Manual Deployment
 
