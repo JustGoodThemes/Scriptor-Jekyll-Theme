@@ -32,7 +32,7 @@ navigation:
     url: /
   - text: About
     url: /about/
-    file: /about.md/
+    file: "/about.md"
   - text: AR/VR
     url: /arvr/
   - text: 3D
