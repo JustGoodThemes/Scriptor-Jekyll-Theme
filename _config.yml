@@ -31,7 +31,7 @@ navigation:
   - text: Home
     url: /
   - text: About
-    url: "about.md"
+    url: /about.md/
   - text: AR/VR
     url: /arvr/
   - text: 3D
