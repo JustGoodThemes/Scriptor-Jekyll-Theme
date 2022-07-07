@@ -9,10 +9,10 @@
 lang: en-US
 
 # Site title
-title: "Scriptor"
+title: "Alex LaTourelle"
 
 # A description of your site for meta tag, search engine results.
-description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
+description: "XR & 3D Designer Creating Virtual Worlds and Spaces"
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
@@ -32,12 +32,11 @@ navigation:
     url: /
   - text: About
     url: /about/
-  - text: Style Guide
-    url: /style-guide/
-  - text: Tags
-    url: /tags/
-  - text: Download
-    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+    file: "about.md"
+  - text: AR/VR
+    url: /arvr/
+  - text: 3D
+    url: /3drenders/
 
 # The shortname for your Disqus site to enable comments.
 disqus: justgoodthemes
