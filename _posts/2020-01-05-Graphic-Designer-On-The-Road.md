@@ -5,7 +5,7 @@ description: "A graphic designer is a professional within the graphic design and
 date: 2022-01-05
 feature_image: images/road.jpg
 tags: [tips, work]
-published: false
+published: true
 ---
 
 ![](https://www.vera.org/dist/img/logo_full.svg)
