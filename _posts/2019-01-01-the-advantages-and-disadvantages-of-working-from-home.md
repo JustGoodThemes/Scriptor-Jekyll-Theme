@@ -6,7 +6,7 @@ date: 2019-01-01
 feature_image: images/desk.jpg
 tags: [tips, work]
 disqus: false
-publish: false
+published: false
 ---
 
 This is a test of Working Copy and GitHub on my iPhone. This is wild!! **Amazing** process here.
