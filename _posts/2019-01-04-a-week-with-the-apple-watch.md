@@ -5,7 +5,7 @@ description: "The Apple Watch is a smartwatch developed by Apple Inc."
 date: 2019-01-04
 feature_image: images/apple-watch.jpg
 tags: [tips, work]
-publish: false
+published: false
 ---
 The **Apple Watch** is a smartwatch developed by [Apple Inc](http://www.apple.com/). It incorporates fitness tracking and health-oriented capabilities as well as integration with iOS and other Apple products and services. The device is available in four variants: Apple Watch Sport, Apple Watch, Apple Watch Hermès, and Apple Watch Edition. The Watch is distinguished by different combinations of cases and first or third party interchangeable bands. Apple Watch relies on a wirelessly connected iPhone to perform many of its default functions such as calling and texting. It is compatible with the iPhone 5 or later models running iOS 8.2 or later, through the use of Bluetooth or Wi-Fi.
 
