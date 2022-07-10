@@ -3,12 +3,13 @@ layout: post
 title: "Testing -- The Advantages & Disadvantages of Working from Home"
 description: "A work at home parent is an entrepreneur who works from home and integrates parenting into his or her business activities."
 date: 2019-01-01
-feature_image: images/desk.jpg 
+feature_image: images/desk.jpg
 tags: [tips, work]
 disqus: false
+publish: false
 ---
 
-This is a test of Working Copy and GitHub on my iPhone. This is wild!! **Amazing** process here. 
+This is a test of Working Copy and GitHub on my iPhone. This is wild!! **Amazing** process here.
 
 A work at home parent is an entrepreneur who works from home and integrates parenting into his or her business activities. They are sometimes referred to as a WAHM *(work at home mom)* or a WAHD *(work at home dad)*.
 
@@ -26,6 +27,6 @@ Fusion Festival began in 1997 near the city of Lärz in north-eastern Germany, a
 
 ## Festival Site
 
-The location is on the original grass-covered grounds of a disused military airfield (at 53°20′48.11″N 12°44′23.25″E for the 234-hectare area central field) about 4.5 km (2.25 miles) due north of the modern Rechlin-Lärz Airfield facility. The site was first acquired by the German Empire in 1916 as an aviation research and training ground, opening the facility for use by the Luftstreitkräfte in August 1918. After the establishment of the Luftwaffe in 1935, the field served as the Erprobungsstelle Rechlin central military aircraft test facility of the Third Reich through early 1945, and it was captured by the Soviet Red Army on May 2, 1945, for use by the VVS. 
+The location is on the original grass-covered grounds of a disused military airfield (at 53°20′48.11″N 12°44′23.25″E for the 234-hectare area central field) about 4.5 km (2.25 miles) due north of the modern Rechlin-Lärz Airfield facility. The site was first acquired by the German Empire in 1916 as an aviation research and training ground, opening the facility for use by the Luftstreitkräfte in August 1918. After the establishment of the Luftwaffe in 1935, the field served as the Erprobungsstelle Rechlin central military aircraft test facility of the Third Reich through early 1945, and it was captured by the Soviet Red Army on May 2, 1945, for use by the VVS.
 
 There are grass-covered concrete hangars (actual bunkers) from that time that were used for Soviet fighter aircraft (hence the Cyrillic transliteration of the festival name and various stages, as many Cyrillic inscriptions were still present on the site). The airfield was reopened for civilian use in 1994 and sold to the Müritz Airpark Group in 2010. [[Source](https://en.wikipedia.org/wiki/Fusion_Festival)]

@@ -5,6 +5,7 @@ description: "The iPhone 6 and Phone 6 Plus are smartphones designed and markete
 date: 2019-01-02
 feature_image: images/iphone-6.jpg
 tags: [tips, design]
+publish: false
 ---
 
 The **iPhone 6** and **iPhone 6 Plus** are [smartphones](https://en.wikipedia.org/wiki/Smartphone) designed and marketed by Apple Inc. The devices are part of the iPhone series and were unveiled on September 9, 2014, and released on September 19, 2014. The iPhone 6 and iPhone 6 Plus jointly serve as successors to the iPhone 5C and iPhone 5S.
