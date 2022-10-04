@@ -12,13 +12,13 @@ lang: en-US
 title: "Aera's Blog"
 
 # A description of your site for meta tag, search engine results.
-description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
+description: "A personal blog of Aera's journey in Information Security."
 
 # The subpath of your site, e.g. /blog, for generating urls.
-baseurl: ""
+baseurl: "/blog"
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "https://saerahan.github.io"
+url: "https://aerahan.github.io"
 
 # Favicon
 favicon: images/favicon.png
