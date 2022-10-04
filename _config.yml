@@ -18,7 +18,7 @@ description: "A personal blog of Aera's journey in Information Security."
 baseurl: ""
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "aerahan.github.io"
+url: ""
 
 # Favicon
 favicon: images/favicon.png
