@@ -2,7 +2,7 @@
 title: "THM Room Writeup: What is Networking?"
 layout: post
 date: 2022-09-25
-categories: [thm]
+feature_image: images/desk.jpg
 tags: [thm]
 ---
 
