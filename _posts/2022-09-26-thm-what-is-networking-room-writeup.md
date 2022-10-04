@@ -10,6 +10,8 @@ TryHackMe's bite-sized 'What is Networking?' module is meant to teach the fundam
 networking. I've taken a couple of intro networking classes already, but I've found THM's format to 
 be exremely easy to understand and great for learning/review! 
 
+<!-- more -->
+
 # What is networking? 
 A network is a system of interconnected devices (in the case of the internet. Postal systems 
 also count as networks!) Networks can be public or private. 
