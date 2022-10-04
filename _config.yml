@@ -15,7 +15,7 @@ title: "Aera's Blog"
 description: "A personal blog of Aera's journey in Information Security."
 
 # The subpath of your site, e.g. /blog, for generating urls.
-baseurl: "/blog"
+baseurl: ""
 
 # The base hostname & protocol of your site for where absolute urls are needed.
 url: "https://aerahan.github.io"
