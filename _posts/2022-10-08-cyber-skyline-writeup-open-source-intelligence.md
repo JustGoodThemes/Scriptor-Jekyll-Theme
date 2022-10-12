@@ -18,10 +18,31 @@ Some OSINT strategies:
 
 #### Google Dorking
 Google dorking, also called Google Hacking, is a method of fine-tuning Google searches thorugh advanced query searches in order to filter out fluff. Here are some common commands: 
+
+##### Intext & allintext
 ```
-<span style = "color:aqua;">Intext</span>:usernames
-<span style = "color:aqua;">allintext</span>:"username" "password"
+Intext:*usernames*
+allintext:*"username" "password"*
 ```
 This command finds specific text. <span style = "color:aqua;">allintext</span> is used to search multiple keywords. 
 
+##### Intitle & allintitle
+```
+intitle:*"snapchat"*
+allintitle:*"ip camera" "dvr"*
+```
+This command filters results based off their HTML page title. 
 
+##### Inurl & allinurl
+```
+inurl:capitalone
+allinurl:
+```
+This filters results based off the URL.
+
+##### Filetype 
+```
+filetype:*log*
+filetype:*txt*
+```
+This command filters files by their filetype. 
