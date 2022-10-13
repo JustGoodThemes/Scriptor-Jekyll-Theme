@@ -2,7 +2,7 @@
 title: "Open Source Intelligence"
 layout: post
 date: 2022-10-08
-feature_image: images/cloudnetwork.png
+feature_image: images/open_source.jpg
 tags: [cyberskyline, opensource, basics]
 ---
 
