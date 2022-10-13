@@ -11,14 +11,14 @@ Open Source Intelligence is the act of finding and gathering information from pu
 <!--more-->
 
 Some OSINT strategies:
-- **Google Dorking** - *a method of fine-tuning Google searches through advanced query searches*
+- [**Google Dorking**](#google-dorking) - *a method of fine-tuning Google searches through advanced query searches*
 - **Metadata** - *looking at data about the data*
 - **Reverse Image Searching** - *searching an image against online databases*
 - **Repositories** - *online code repositories*
 - **Internet Archive** - *a digital library of the Internet*
 - **Profiles** - *looking up information about people*
 
-#### Google Dorking
+### Google Dorking
 Google dorking, also called Google Hacking, is a method of fine-tuning Google searches thorugh advanced query searches in order to filter out fluff. Here are some common commands: 
 
 ##### Intext & allintext
@@ -68,6 +68,7 @@ site: https://rit.edu
 ```
 The site command allows users to narrow down searches to a specific website.
 
+
 In addition, commands can be combined. 
 
 For example, this command searches for "admin_password" in all three types TXT, LOG, and CFG: 
@@ -75,3 +76,10 @@ For example, this command searches for "admin_password" in all three types TXT, 
 "admin_password" ext:txt |ext:log | ext:cfg
 ```
 
+
+<br>
+### Metadata
+
+### Reverse Image Searching
+
+### OSINT: Common Tools
