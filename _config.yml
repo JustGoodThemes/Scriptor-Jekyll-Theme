@@ -21,7 +21,7 @@ baseurl: ""
 url: "https://www.aerahan.github.io"
 
 # Favicon
-favicon: images/favicon.png
+favicon: images/android-chrome-192x192.png
 
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 google_analytics: ""
