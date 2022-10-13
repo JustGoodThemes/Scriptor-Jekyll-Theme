@@ -3,7 +3,7 @@ title: "Open Source Intelligence"
 layout: post
 date: 2022-10-08
 feature_image: images/cloudnetwork.png
-tags: [cyberskyline] [basics] [opensource]
+tags: [cyberskyline] [opensource] [basics]
 ---
 
 Open Source Intelligence is the act of finding and gathering information from public sources on a target. You'll probably be surprised by the amount of information that can be found online with a bit of prodding! OSINT is great because it's typically not very expensive and and can reveal a lot of information about a target. Something to watch out for, however, is fake information that may be posted.
