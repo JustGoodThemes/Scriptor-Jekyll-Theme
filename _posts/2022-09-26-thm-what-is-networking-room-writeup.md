@@ -3,7 +3,7 @@ title: "THM Room Writeup: Networking Basics"
 layout: post
 date: 2022-09-25
 feature_image: images/cloudnetwork.png
-tags: [thm]
+tags: [thm, networking, basics]
 ---
 
 TryHackMe has a couple of networking basics modules that are meant to teach the fundamentals of computer
