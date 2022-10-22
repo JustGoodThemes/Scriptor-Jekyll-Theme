@@ -2,7 +2,7 @@
 title: "The OSI Model: Basics"
 layout: post
 date: 2022-10-13
-feature_image: images/open_source.jpg
+feature_image: images/OSI_Model.png
 tags: [osi, networking, basics]
 ---
 
