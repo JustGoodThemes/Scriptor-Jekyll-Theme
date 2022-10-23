@@ -15,10 +15,10 @@ The OSI model consists of 7 layers that each have their own responsibilities. Th
 7. [Application](#layer-7-application-layer)
 6. [Presentation](#layer-6-presentation-layer)
 5. [Session](#layer-5-session-layer)
-4. Transport
-3. Network
-2. Data Link
-1. Physical
+4. [Transport](#layer-4-transport-layer)
+3. [Network](#layer-3-network-layer)
+2. [Data Link](#layer-2-data-link-layer)
+1. [Physical](#layer-1-physical-layer)
 
 
 
