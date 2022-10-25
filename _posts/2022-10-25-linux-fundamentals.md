@@ -24,12 +24,11 @@ Linux is an operating system, just like Windows. Something I didn't know until r
 #### Important Components
 - Bootloader - manages the boot process
 - Kernel - the core of the system and lowest level of the operating system that manages the CPU, memory, and <div title = "an internal/external device that connects to a computer but isn't a core component, such as a keyboard, mouse, or speaker" style = "color:#6495ED;">peripheral devices</div>.
-- Init System
 - Daemons - background services (consider them servants) that run functions such as printing, scheduling, multimedia and sound during bootup or login. 
+- OS Shell - The shell is the command line that lets you control the OS using text. 
 - Graphical Server
 - Desktop Environment
 - Applications
-
 
 
 #### Why Linux?
@@ -43,3 +42,7 @@ Linux distributions or distros are simply different versions that can be downloa
 
 
 ###### Sources & Additional Resources
+https://www.linux.com/what-is-linux/
+https://www.plesk.com/blog/various/what-is-linux/
+https://people.cs.uchicago.edu/~kaharris/cspp51081/Links/unix-resources/linux-fund.pdf
+https://tryhackme.com/paths
