@@ -2,7 +2,7 @@
 title: "Linux Background"
 layout: post
 date: 2022-10-25
-feature_image: images/
+feature_image: images/linuxintro.jpg
 tags: [linux, basics]
 ---
 
