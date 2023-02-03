@@ -9,19 +9,19 @@
 lang: en-US
 
 # Site title
-title: "Scriptor"
+title: "Catherine O'Brien"
 
 # A description of your site for meta tag, search engine results.
-description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
+description: "Catherine O'Brien is an artist, engineer, and writer located in New York City."
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "https://scriptor-jekyll.netlify.com"
+url: "https://catherine-o-brien.github.io/"
 
 # Favicon
-favicon: images/favicon.png
+favicon: images/author.png
 
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 google_analytics: ""
@@ -32,15 +32,15 @@ navigation:
     url: /
   - text: About
     url: /about/
-  - text: Style Guide
-    url: /style-guide/
-  - text: Tags
-    url: /tags/
-  - text: Download
-    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+  - text: Writing
+    url: /writing/
+  - text: CV
+    url: /cv/
+  - text: Portfolio
+    url: /portfolio/
 
 # The shortname for your Disqus site to enable comments.
-disqus: justgoodthemes
+disqus: catherine-o-brien
 
 # Colors
 accent_color: '#2d72d9'
