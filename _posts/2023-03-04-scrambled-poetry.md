@@ -1,17 +1,25 @@
 ---
 layout: post
 title: "Generatively Scrambling Sylvia Plath's Poetry With An Arduino ESP-32"
-description: "For my first project with my ESP32, I wanted to combine my dual loves of poetry and programming. To do this, I wrote a simple program that prints the text of Sylvia Plath’s "Mad Girl’s Love Song." once correctly, and once scrambled. If you’re new to the world of embedded systems and looking for a fun and creative way to start, this simple Arduino project is a great way to dip your toes in and learn the basics. "
+description: "For my first project with my ESP32, I wanted to combine my dual loves of poetry and programming. To do this, I wrote a simple program that prints the text of Sylvia Plath’s "Mad Girl’s Love Song." once correctly, and once scrambled. If you’re new to the world of embedded systems and looking for a fun and creative way to start, this simple Arduino project is a great way to dip your toes in and learn the basics."
 date: 2023-02-03
 feature_image: images/author.png
 tags: []
 ---
 
-Being a computer science student, my peers are often surprised by how much time I spend in the English department. In fact, this year, I’ve taken more creative writing classes than computer science ones. I don’t see a lot of overlap of my classmates in those departments, which I’m sure won’t come as much of a surprise to many, but to me, these subjects aren’t as different as they seem. 
-Poetry and programming are both fundamentally creative and generative pursuits, disciplines that allow me to create rather than consume. In the Age of Information, we have access to a huge base of knowledge in the very palm of our hands– and yet that often leads us to spend hours and hours a day devouring content online without making time for our own creativity. Writing and coding have both been ways for me to get out of that loop and to 
-For my first project with my ESP32, I wanted to combine my dual loves of poetry and programming. To do this, I wrote a simple program that prints the text of Sylvia Plath’s “Mad Girl’s Love Song”– but there’s a twist. The device first prints the text in its correct order, and then prints a scrambled version of the poem. This jumbling of Plath’s carefully curated words symbolizes her descent into madness through her life and through this poem, ultimately leading to her tragic death. By using the random number generator in \<cstdlib\>, the device creates a unique randomization of the lines each time it runs. 
-If you’re new to the world of embedded systems and looking for a fun and creative way to start, this simple Arduino project is a great way to dip your toes in and learn the basics. Learn how to try this project out for yourself below!
+For my first project with my ESP32, I wanted to combine my dual loves of poetry and programming. To do this, I wrote a simple program that prints the text of Sylvia Plath’s "Mad Girl’s Love Song." once correctly, and once scrambled. If you’re new to the world of embedded systems and looking for a fun and creative way to start, this simple Arduino project is a great way to dip your toes in and learn the basics. 
 
+<!--more-->
+
+[View this project on my GitHub](https://github.com/catherine-o-brien/module1)
+
+Being a computer science student, my peers are often surprised by how much time I spend in the English department. In fact, this year, I’ve taken more creative writing classes than computer science ones. I don’t see a lot of overlap of my classmates in those departments, which I’m sure won’t come as much of a surprise to many, but to me, these subjects aren’t as different as they seem. 
+
+Poetry and programming are both fundamentally creative and generative pursuits, disciplines that allow me to create rather than consume. In the Age of Information, we have access to a huge base of knowledge in the very palm of our hands– and yet that often leads us to spend hours and hours a day devouring content online without making time for our own creativity. Writing and coding have both been ways for me to get out of that loop and to create more than I consume. 
+
+For my first project with my ESP32, I wanted to combine my dual loves of poetry and programming. To do this, I wrote a simple program that prints the text of Sylvia Plath’s “Mad Girl’s Love Song”– but there’s a twist. The device first prints the text in its correct order, and then prints a scrambled version of the poem. This jumbling of Plath’s carefully curated words symbolizes her descent into madness through her life and through this poem, ultimately leading to her tragic death. By using the random number generator in \<cstdlib\>, the device creates a unique randomization of the lines each time it runs. 
+
+If you’re new to the world of embedded systems and looking for a fun and creative way to start, this simple Arduino project is a great way to dip your toes in and learn the basics. Learn how to try this project out for yourself below!
 
 <!--more-->
 
