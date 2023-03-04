@@ -3,15 +3,17 @@ layout: post
 title: "Generatively Scrambling Sylvia Plath's Poetry With An Arduino ESP-32"
 description: "For my first project with my ESP32, I wanted to combine my dual loves of poetry and programming. To do this, I wrote a simple program that prints the text of Sylvia Plath’s "Mad Girl’s Love Song." once correctly, and once scrambled. If you’re new to the world of embedded systems and looking for a fun and creative way to start, this simple Arduino project is a great way to dip your toes in and learn the basics."
 date: 2023-02-03
-feature_image: images/author.png
+feature_image: images/scrambled-poetry/TTGO-title-sequence.png
 tags: []
 ---
 
-For my first project with my ESP32, I wanted to combine my dual loves of poetry and programming. To do this, I wrote a simple program that prints the text of Sylvia Plath’s "Mad Girl’s Love Song." once correctly, and once scrambled. If you’re new to the world of embedded systems and looking for a fun and creative way to start, this simple Arduino project is a great way to dip your toes in and learn the basics. 
+For my first project with my ESP32, I wanted to combine my dual loves of poetry and programming. To do this, I wrote a simple program that prints the text of Sylvia Plath’s "Mad Girl’s Love Song" once correctly, and once scrambled. If you’re new to the world of embedded systems and looking for a fun and creative way to start, this simple Arduino project is a great way to dip your toes in and learn the basics. 
 
 <!--more-->
 
 [View this project on my GitHub](https://github.com/catherine-o-brien/module1)
+
+# MY PROJECT
 
 Being a computer science student, my peers are often surprised by how much time I spend in the English department. In fact, this year, I’ve taken more creative writing classes than computer science ones. I don’t see a lot of overlap of my classmates in those departments, which I’m sure won’t come as much of a surprise to many, but to me, these subjects aren’t as different as they seem. 
 
@@ -35,6 +37,8 @@ If you’re new to the world of embedded systems and looking for a fun and creat
 ## 1. Turning ESP-32 on
 The easiest way to power an ESP-32 is with the USB-C cable. To check that everything was working properly, I plugged one end of USB-C cable into my laptop and the other into my ESP-32. When the device was properly connected, a blue light on the device should flash, and the screen should power on and show the system settings. 
 
+![TTGO displaying green and red text of its factory settings.](images/scrambled-poetry/TTGO-standard-display.png "Arduino IDE Port")
+
 If your device doesn’t seem to be working, you might try flipping your USB-C cable over and reinserting it.
 
 Later, you can also power your device using a 5V lithium battery. I opted not to use a battery for this project because the batteries we received in my class malfunctioned, but you may also decide to power your ESP-32 by connecting a 5V battery to your device. You can do this by soldering the battery to the Ground and 5V pins on your device, or by attaching GPIO pins to the ESP-32 and inserting the battery into those pins. 
@@ -46,16 +50,23 @@ If you're using a Mac and running Big Sur or above, you may need to download [th
 
 I opened the IDE and selected in the dropdown menu the port where my ESP-32 was connected.
 
+![A screenshot of the Arduino IDE displaying the menu in the upper left corner that allows the user to select a port.](images/scrambled-poetry/Arduino-IDE-port.png "Arduino IDE Port")
+
 My goal here was to flash example code to ensure that my device was working properly. To do that, I used the default example codes installed into the IDE. To access those, I looked through the menu to find File → Examples → TFT_eSPI → 160 x 128. I used Pong_v3. 
+
+![A screenshot of the Arduino IDE displaying the menu in the upper left corner that shows the user naviating to the example code.](images/scrambled-poetry/Arduino-IDE-example-code.png "Arduino IDE Example Code")
+
 
 To flash this code to my device, I pushed the right-facing arrow in the upper left corner. 
 
 When the code had successfully compiled and written to the ESP-32, my device displayed the Pong game. Once the code has been flashed onto the ESP-32, it will not need to be plugged into your computer to run– whenever your ESP-32 is plugged into power, it will run that code. 
 
-## 3. Writing original code
+## 3. My code
 Arduinos use a programming language based on C++, which means that C++ code will run in this IDE. 
 
-For my project, I wrote a program that displayed the text of Sylvia Plath’s poem “Mad Girl’s Love Song” once correctly, and then once jumbled. See my code on my GitHub [here](http://www.wch-ic.com/downloads/CH341SER_MAC_ZIP.html). 
+For my project, I wrote a program that displayed the text of Sylvia Plath’s poem “Mad Girl’s Love Song” once correctly, and then once jumbled, representing Plath's descent into madness over the course of her life. 
+
+My code uses a random number generator to jumble the lines of the poem, meaning that the scrambling of the poem is slightly different each time. I'll spare you the gory details, but you can see the intricacies of how my code works on my GitHub [here](http://www.wch-ic.com/downloads/CH341SER_MAC_ZIP.html). 
 
 ## 4. Exhibition
 I exhibited this project in my Creative Embedded Systems class with Prof. Mark Santolucito at Barnard College. We each plugged the USB-C port of our ESP-32s into a large board and watched them all play out. Check it out in the video!
