@@ -37,7 +37,7 @@ If you’re new to the world of embedded systems and looking for a fun and creat
 ## 1. Turning ESP-32 on
 The easiest way to power an ESP-32 is with the USB-C cable. To check that everything was working properly, I plugged one end of USB-C cable into my laptop and the other into my ESP-32. When the device was properly connected, a blue light on the device should flash, and the screen should power on and show the system settings. 
 
-![TTGO displaying green and red text of its factory settings.](images/scrambled-poetry/TTGO-standard-display.png "Arduino IDE Port")
+<img src="images/scrambled-poetry/TTGO-standard-display.png " alt="TTGO displaying green and red text of its factory settings." width="300"/>
 
 If your device doesn’t seem to be working, you might try flipping your USB-C cable over and reinserting it.
 
