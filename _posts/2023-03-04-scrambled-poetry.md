@@ -69,7 +69,11 @@ For my project, I wrote a program that displayed the text of Sylvia Plath’s po
 My code uses a random number generator to jumble the lines of the poem, meaning that the scrambling of the poem is slightly different each time. I'll spare you the gory details, but you can see the intricacies of how my code works on my GitHub [here](http://www.wch-ic.com/downloads/CH341SER_MAC_ZIP.html). 
 
 ## 4. Exhibition
-I exhibited this project in my Creative Embedded Systems class with Prof. Mark Santolucito at Barnard College. We each plugged the USB-C port of our ESP-32s into a large board and watched them all play out. Check it out in the video!
+I exhibited this project in my Creative Embedded Systems class with Prof. Mark Santolucito at Barnard College. We each plugged the USB-C port of our ESP-32s into a large board and watched them all play out. 
+
+![The class exhibition of ESP-32s plugged into a board displaying their various outputs on the screens](images/scrambled-poetry/Class-Exhibition.png "Arduino IDE Port")
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6Ema4cQnsKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # CREDITS
 
