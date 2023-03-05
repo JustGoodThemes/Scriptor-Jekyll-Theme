@@ -73,6 +73,8 @@ I exhibited this project in my Creative Embedded Systems class with Prof. Mark S
 
 ![The class exhibition of ESP-32s plugged into a board displaying their various outputs on the screens](images/scrambled-poetry/Class-Exhibition.png "Arduino IDE Port")
 
+Below is a video of my code running the full text of the poem, and then one version of it scrambling the poem. Enjoy!
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6Ema4cQnsKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # CREDITS
