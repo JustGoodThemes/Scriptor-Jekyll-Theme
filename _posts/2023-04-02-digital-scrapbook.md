@@ -94,7 +94,7 @@ Here is an example of a collage that I created with this device:
 
 And here is a video of how the device works in practice!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ASMzoCGCKeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/COVOv6qbVOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Thanks for tagging along with this post! More creative embedded systems projects to come soon! 
 
