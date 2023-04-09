@@ -3,7 +3,7 @@ layout: post
 title: "Generatively Scrambling Sylvia Plath's Poetry With An Arduino ESP-32"
 description: "For my first project with my ESP32, I wanted to combine my dual loves of poetry and programming. To do this, I wrote a simple program that prints the text of a Sylvia Plath poem. once correctly, and once scrambled. If you’re new to the world of embedded systems and looking for a fun and creative way to start, this simple Arduino project is a great way to dip your toes in and learn the basics."
 date: 2023-02-03
-feature_image: images/scrambled-poetry/TTGO-title-sequence.png
+feature_image: images/scrambled-poetry/Class-Exhibition.png
 tags: []
 ---
 
