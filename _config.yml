@@ -31,13 +31,13 @@ navigation:
   - text: Home
     url: /
   - text: About
-    url: /about.html/
+    url: /about
   - text: Writing
-    url: /writing.html/
+    url: /writing
   - text: CV
-    url: /cv.html/
+    url: /cv
   - text: Portfolio
-    url: /portfolio.html/
+    url: /portfolio
 
 # The shortname for your Disqus site to enable comments.
 disqus: catherine-o-brien
