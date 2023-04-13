@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .site-header {
-  border-bottom: 1px solid _palette(border);
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
@@ -14,10 +13,38 @@
   padding-top: 2.5em;
 }
 
+.homepage-site-header {
+  padding-bottom: 3.33333em;
+  padding-top: 2.5em;
+}
+
 .site-title {
   color: _palette(secondary);
   font-family: _font(secondary);
   font-size: 1.66667rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin: 0 15px 0 0;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+  }
+
+  a {
+    color: _palette(secondary);
+    text-decoration: none;
+    &:hover {
+      color: _palette(accent);
+    }
+  }
+}
+
+.homepage-site-title {
+  color: _palette(secondary);
+  font-family: _font(secondary);
+  font-size: 5rem;
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1.2;
