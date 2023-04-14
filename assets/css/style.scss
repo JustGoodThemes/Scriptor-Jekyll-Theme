@@ -16,7 +16,6 @@
   3. Structure
   4. Site Header
   5. Content
-  6. Comments
   7. Posts Navigation
   8. Site Footer
   9. Animations
@@ -30,13 +29,11 @@ $font: (
 );
 
 // Palette.
-{% assign accent = site.accent_color | default: '#2d72d9' %}
 $palette: (
-  accent:    {{ accent }},
+  accent:    #008000,
   primary:   #6b747a,
   secondary: #2c343c,
   meta:      #9ba6ad,
-  border:    #d7d7d7,
   bg:        #fbfbfb
 );
 
@@ -48,7 +45,6 @@ $palette: (
 @import "structure";
 @import "site-header";
 @import "content";
-@import "comments";
 @import "posts-navigation";
 @import "site-footer";
 @import "animations";

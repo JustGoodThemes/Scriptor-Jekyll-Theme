@@ -12,7 +12,7 @@ lang: en-US
 title: "Catherine O'Brien"
 
 # A description of your site for meta tag, search engine results.
-description: "Catherine O'Brien is an artist, engineer, and writer located in New York City."
+description: "Catherine O'Brien is an artist, writer, and engineer living in New York City."
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
@@ -28,8 +28,6 @@ google_analytics: ""
 
 # Site navigation - each item must have a title and a url.
 navigation:
-  - text: Home
-    url: /
   - text: About
     url: /about
   - text: Writing

@@ -1,6 +1,7 @@
 {
   "name": "Catherine O'Brien",
-  "bio": "Catherine O'Brien is an artist, engineer, and writer located in New York City.",
+  "bio": "Catherine O'Brien is an artist, writer, and engineer living in New York City.",
+  "nameless_bio": "is an artist, writer, and engineer living in New York City.",
   "url": "https://catherine-o-brien.github.io/",
   "location": "New York City",
   "image": "images/author.png"
