@@ -150,6 +150,12 @@
   }
 }
 
+.portfolio-post {
+  text-decoration: none;
+  color: _palette(primary);
+  font-family: _palette(secondary);
+}
+
 .archive-top-link {
   color: _palette(meta);
   font-size: 0.88889em;

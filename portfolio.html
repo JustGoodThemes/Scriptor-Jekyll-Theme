@@ -18,11 +18,14 @@ layout: default
 {% for post in site.posts %}
 <div class="col-md-6 col-xs-12">
     {% if post.feature_image and post.feature_image != "" %}
-    <figure class="mini-thumbnail">
-      <img src="{{ post.feature_image | relative_url }}" alt="{{ post.title }}">
-    </figure><!-- .post-thumbnail -->
-    {% endif %}
-    {{ post.title }}
+    <a class="portfolio-post" href="{{post.url}}">
+      <figure class="mini-thumbnail">
+        <img src="{{ post.feature_image | relative_url }}" alt="{{ post.title }}">
+      </figure><!-- .post-thumbnail -->
+      {% endif %}
+      <time class="post-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{post.date | date: "%B %-d, %Y" }}</time>
+      <p>{{ post.title }}</p>
+    </a>
 </div>
 {% endfor %}
 
