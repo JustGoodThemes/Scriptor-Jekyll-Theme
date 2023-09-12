@@ -7,6 +7,10 @@
 
 [demo]: https://scriptor-jekyll.netlify.app/
 
+# Premium Jekyll Themes
+
+You can find our premium Jekyll themes here -> [jekyllthemes.io](https://jekyllthemes.io/developers/just-good-themes)
+
 ## Features
 
 - Responsive design
